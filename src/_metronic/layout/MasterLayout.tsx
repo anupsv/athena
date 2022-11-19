@@ -1,16 +1,11 @@
 import {useEffect} from 'react'
 import {Outlet, useLocation} from 'react-router-dom'
 import {HeaderWrapper} from './components/header'
-import {RightToolbar} from '../partials/layout/RightToolbar'
 import {ScrollTop} from './components/scroll-top'
 import {Content} from './components/content'
 import {FooterWrapper} from './components/footer'
 import {Sidebar} from './components/sidebar'
 import {
-  DrawerMessenger,
-  ActivityDrawer,
-  InviteUsers,
-  UpgradePlan,
   ThemeModeProvider,
 } from '../partials'
 import {PageDataProvider} from './core'
@@ -44,16 +39,6 @@ const MasterLayout = () => {
           </div>
         </div>
 
-        {/* begin:: Drawers */}
-        <ActivityDrawer />
-        <RightToolbar />
-        <DrawerMessenger />
-        {/* end:: Drawers */}
-
-        {/* begin:: Modals */}
-        <InviteUsers />
-        <UpgradePlan />
-        {/* end:: Modals */}
         <ScrollTop />
       </ThemeModeProvider>
     </PageDataProvider>

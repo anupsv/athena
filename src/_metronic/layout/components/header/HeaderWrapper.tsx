@@ -24,21 +24,11 @@ export function HeaderWrapper() {
       >
         {config.app.sidebar?.display && (
           <>
-            <div
-              className='d-flex align-items-center d-lg-none ms-n2 me-2'
-              title='Show sidebar menu'
-            >
-              <div
-                className='btn btn-icon btn-active-color-primary w-35px h-35px'
-                id='kt_app_sidebar_mobile_toggle'
-              >
-              </div>
               <div className='d-flex align-items-center flex-grow-1 flex-lg-grow-0'>
-                <Link to='/dashboard' className='d-lg-none'>
-                  <img alt='Logo' src='./assets/media/logos/default-small.svg' className='h-30px' />
-                </Link>
+                  <Link to='/dashboard' className='d-lg-none'>
+                      <img alt='Logo' src='./assets/media/logos/default-small.svg' className='h-30px' />
+                  </Link>
               </div>
-            </div>
           </>
         )}
       </div>

@@ -47,21 +47,6 @@ const SidebarLogo = () => {
         />
       </Link>
 
-      {(appSidebarDefaultMinimizeDesktopEnabled || appSidebarDefaultCollapseDesktopEnabled) && (
-        <div
-          id='kt_app_sidebar_toggle'
-          className={clsx(
-            'app-sidebar-toggle btn btn-icon btn-shadow btn-sm btn-color-muted btn-active-color-primary body-bg h-30px w-30px position-absolute top-50 start-100 translate-middle rotate',
-            {active: appSidebarDefaultMinimizeDefault}
-          )}
-          data-kt-toggle='true'
-          data-kt-toggle-state={toggleState}
-          data-kt-toggle-target='body'
-          data-kt-toggle-name={`app-sidebar-${toggleType}`}
-        >
-          <KTSVG path='/media/icons/duotune/arrows/arr079.svg' className='svg-icon-2 rotate-180' />
-        </div>
-      )}
     </div>
   )
 }
