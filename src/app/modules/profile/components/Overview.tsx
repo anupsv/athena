@@ -24,8 +24,6 @@ export function Overview() {
                 <FeedsWidget6 className='mb-5 mb-xxl-8'/>
             </div>
             <div className='col-xl-6'>
-                <ListsWidget5 className='mb-5 mb-xxl-8'/>
-
                 <ListsWidget2 className='mb-5 mb-xxl-8'/>
             </div>
         </div>

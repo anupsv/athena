@@ -1,13 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import {KTSVG, toAbsoluteUrl} from '../../../helpers'
-import {Dropdown1} from '../../content/dropdown/Dropdown1'
 
 type Props = {
   className: string
 }
 
 const FeedsWidget6: React.FC<Props> = ({className}) => {
+
   return (
     <div className={`card ${className}`}>
       {/* begin::Body */}
@@ -21,32 +21,8 @@ const FeedsWidget6: React.FC<Props> = ({className}) => {
               <img src={toAbsoluteUrl('/media/avatars/300-13.jpg')} alt='' />
             </div>
             {/* end::Avatar */}
-
-            {/* begin::Info */}
-            <div className='d-flex flex-column'>
-              <a href='#' className='text-gray-800 text-hover-primary fs-6 fw-bold'>
-                Mat Dillon
-              </a>
-              <span className='text-gray-400 fw-semibold'>Last month</span>
-            </div>
-            {/* end::Info */}
           </div>
           {/* end::User */}
-
-          {/* begin::Menu */}
-          <div className='my-0'>
-            <button
-              type='button'
-              className='btn btn-sm btn-icon btn-color-primary btn-active-light-primary'
-              data-kt-menu-trigger='click'
-              data-kt-menu-placement='bottom-end'
-              data-kt-menu-flip='top-end'
-            >
-              <KTSVG path='/media/icons/duotune/general/gen024.svg' className='svg-icon-2' />
-            </button>
-            <Dropdown1 />
-          </div>
-          {/* end::Menu */}
         </div>
         {/* end::Header */}
 
@@ -54,20 +30,9 @@ const FeedsWidget6: React.FC<Props> = ({className}) => {
         <div className='mb-6'>
           {/* begin::Text */}
           <div className='text-gray-800 fs-6 fw-normal mb-5'>
-            Outlines keep you honest. They stop you from indulging in poorly thought-out metaphors
+            Outlinessss keep you honest. They stop you from indulging in poorly thought-out metaphors
           </div>
           {/* end::Text */}
-
-          {/* begin::Video */}
-          <div className='mb-5'>
-            <iframe
-              title='widget11-video'
-              className='embed-responsive-item rounded h-300px w-100'
-              src='https://www.youtube.com/embed/qIHXpnASPAA'
-              allowFullScreen={true}
-            />
-          </div>
-          {/* end::Video */}
 
           {/* begin::Toolbar */}
           <div className='d-flex align-items-center mb-5'>
