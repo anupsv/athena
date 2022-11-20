@@ -7,26 +7,26 @@ import {UserEditModal} from './user-edit-modal/UserEditModal'
 import {KTCard} from '../../../../../supporting/helpers'
 
 const UsersList = () => {
-  const {itemIdForUpdate} = useListView()
-  return (
-    <>
-      <KTCard>
-        <UsersListHeader />
-        <UsersTable />
-      </KTCard>
-      {itemIdForUpdate !== undefined && <UserEditModal />}
-    </>
-  )
+    const {itemIdForUpdate} = useListView()
+    return (
+        <>
+            <KTCard>
+                <UsersListHeader/>
+                <UsersTable/>
+            </KTCard>
+            {itemIdForUpdate !== undefined && <UserEditModal/>}
+        </>
+    )
 }
 
 const UsersListWrapper = () => (
-  <QueryRequestProvider>
-    <QueryResponseProvider>
-      <ListViewProvider>
-        <UsersList />
-      </ListViewProvider>
-    </QueryResponseProvider>
-  </QueryRequestProvider>
+    <QueryRequestProvider>
+        <QueryResponseProvider>
+            <ListViewProvider>
+                <UsersList/>
+            </ListViewProvider>
+        </QueryResponseProvider>
+    </QueryRequestProvider>
 )
 
 export {UsersListWrapper}

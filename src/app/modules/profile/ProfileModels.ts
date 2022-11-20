@@ -1,6 +1,6 @@
 export interface IconUserModel {
-  name: string
-  avatar?: string
-  color?: string
-  initials?: string
+    name: string
+    avatar?: string
+    color?: string
+    initials?: string
 }

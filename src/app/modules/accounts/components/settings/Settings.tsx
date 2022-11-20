@@ -7,14 +7,14 @@ import {Notifications} from './cards/Notifications'
 import {DeactivateAccount} from './cards/DeactivateAccount'
 
 export function Settings() {
-  return (
-    <>
-      <ProfileDetails />
-      <SignInMethod />
-      <ConnectedAccounts />
-      <EmailPreferences />
-      <Notifications />
-      <DeactivateAccount />
-    </>
-  )
+    return (
+        <>
+            <ProfileDetails/>
+            <SignInMethod/>
+            <ConnectedAccounts/>
+            <EmailPreferences/>
+            <Notifications/>
+            <DeactivateAccount/>
+        </>
+    )
 }

@@ -1,49 +1,49 @@
 export interface ISettings {
-  setupEmailNotifications: {
-    emailNotifications: boolean
-    sendCopyToPersonalEmail: boolean
-  }
-  activityRelatedEmail: {
-    whenToEmail: {
-      youHaveNewNotifications: boolean
-      youAreADirectMessage: boolean
-      someoneAddsYouAsAConnection: boolean
+    setupEmailNotifications: {
+        emailNotifications: boolean
+        sendCopyToPersonalEmail: boolean
     }
-    whenToEscalateEmails: {
-      uponNewOrder: boolean
-      newMembershipApproval: boolean
-      memberRegistration: boolean
+    activityRelatedEmail: {
+        whenToEmail: {
+            youHaveNewNotifications: boolean
+            youAreADirectMessage: boolean
+            someoneAddsYouAsAConnection: boolean
+        }
+        whenToEscalateEmails: {
+            uponNewOrder: boolean
+            newMembershipApproval: boolean
+            memberRegistration: boolean
+        }
     }
-  }
-  updatesFromKeenthemes: {
-    newsAboutKTProducts: boolean
-    tipsOnGettingMore: boolean
-    thingsYouMissed: boolean
-    newsAboutKTPartners: boolean
-  }
+    updatesFromKeenthemes: {
+        newsAboutKTProducts: boolean
+        tipsOnGettingMore: boolean
+        thingsYouMissed: boolean
+        newsAboutKTPartners: boolean
+    }
 }
 
 export const defaultSettings: ISettings = {
-  setupEmailNotifications: {
-    emailNotifications: true,
-    sendCopyToPersonalEmail: false,
-  },
-  activityRelatedEmail: {
-    whenToEmail: {
-      youHaveNewNotifications: true,
-      youAreADirectMessage: false,
-      someoneAddsYouAsAConnection: false,
+    setupEmailNotifications: {
+        emailNotifications: true,
+        sendCopyToPersonalEmail: false,
     },
-    whenToEscalateEmails: {
-      uponNewOrder: true,
-      newMembershipApproval: false,
-      memberRegistration: false,
+    activityRelatedEmail: {
+        whenToEmail: {
+            youHaveNewNotifications: true,
+            youAreADirectMessage: false,
+            someoneAddsYouAsAConnection: false,
+        },
+        whenToEscalateEmails: {
+            uponNewOrder: true,
+            newMembershipApproval: false,
+            memberRegistration: false,
+        },
     },
-  },
-  updatesFromKeenthemes: {
-    newsAboutKTProducts: false,
-    tipsOnGettingMore: false,
-    thingsYouMissed: false,
-    newsAboutKTPartners: false,
-  },
+    updatesFromKeenthemes: {
+        newsAboutKTProducts: false,
+        tipsOnGettingMore: false,
+        thingsYouMissed: false,
+        newsAboutKTPartners: false,
+    },
 }
