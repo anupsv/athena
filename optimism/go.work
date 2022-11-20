@@ -1,0 +1,26 @@
+go 1.18
+
+use (
+	./batch-submitter
+	./bss-core
+	./endpoint-monitor
+	./gas-oracle
+	./indexer
+	./l2geth
+	./l2geth-exporter
+	./op-batcher
+	./op-bindings
+	./op-chain-ops
+	./op-e2e
+	./op-exporter
+	./op-node
+	./op-proposer
+	./op-service
+	./proxyd
+	./teleportr
+)
+
+replace github.com/ethereum/go-ethereum v1.10.26 => github.com/ethereum-optimism/op-geth v0.0.0-20221104231810-30db39cae2be
+
+// For local debugging:
+//replace github.com/ethereum/go-ethereum v1.10.26 => ../go-ethereum
