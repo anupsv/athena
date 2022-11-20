@@ -11,7 +11,7 @@ import {
   MixedWidget9,
   MixedWidget10,
   MixedWidget11,
-} from '../../../../_metronic/partials/widgets'
+} from '../../../../supporting/partials/widgets'
 
 const Mixed: FC = () => {
   return (

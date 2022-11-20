@@ -1,5 +1,5 @@
 import {Navigate, Route, Routes, Outlet} from 'react-router-dom'
-import {PageLink, PageTitle} from '../../../_metronic/layout/core'
+import {PageLink, PageTitle} from '../../../supporting/layout/core'
 import {Charts} from './components/Charts'
 import {Feeds} from './components/Feeds'
 import {Lists} from './components/Lists'

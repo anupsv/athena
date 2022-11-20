@@ -1,10 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import {FC} from 'react'
 import {useIntl} from 'react-intl'
-import {PageTitle} from '../../../_metronic/layout/core'
+import {PageTitle} from '../../../supporting/layout/core'
 import {
     ListsWidget5,
-} from '../../../_metronic/partials/widgets'
+} from '../../../supporting/partials/widgets'
 
 const DashboardPage: FC = () => (
   <>

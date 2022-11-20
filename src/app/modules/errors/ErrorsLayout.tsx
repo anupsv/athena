@@ -1,7 +1,7 @@
 import {useEffect} from 'react'
 import {Outlet} from 'react-router-dom'
-import {useThemeMode} from '../../../_metronic/partials'
-import {toAbsoluteUrl} from '../../../_metronic/helpers'
+import {useThemeMode} from '../../../supporting/partials'
+import {toAbsoluteUrl} from '../../../supporting/helpers'
 
 const BODY_CLASSES = ['bgi-size-cover', 'bgi-position-center', 'bgi-no-repeat']
 const ErrorsLayout = () => {

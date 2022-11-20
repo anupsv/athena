@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react'
-import {MenuComponent} from '../../../../../../../_metronic/assets/ts/components'
-import {initialQueryState, KTSVG} from '../../../../../../../_metronic/helpers'
+import {MenuComponent} from '../../../../../../../supporting/assets/ts/components'
+import {initialQueryState, KTSVG} from '../../../../../../../supporting/helpers'
 import {useQueryRequest} from '../../core/QueryRequestProvider'
 import {useQueryResponse} from '../../core/QueryResponseProvider'
 

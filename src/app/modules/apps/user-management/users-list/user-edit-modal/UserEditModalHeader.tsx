@@ -1,4 +1,4 @@
-import {KTSVG} from '../../../../../../_metronic/helpers'
+import {KTSVG} from '../../../../../../supporting/helpers'
 import {useListView} from '../core/ListViewProvider'
 
 const UserEditModalHeader = () => {

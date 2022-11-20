@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import clsx from 'clsx'
 import React, {useState} from 'react'
-import {KTSVG, toAbsoluteUrl} from '../../../_metronic/helpers'
-import {getLayoutFromLocalStorage, ILayout, LayoutSetup} from '../../../_metronic/layout/core'
+import {KTSVG, toAbsoluteUrl} from '../../../supporting/helpers'
+import {getLayoutFromLocalStorage, ILayout, LayoutSetup} from '../../../supporting/layout/core'
 
 const BuilderPage: React.FC = () => {
   const [tab, setTab] = useState('Sidebar')
