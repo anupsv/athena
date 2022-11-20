@@ -39,7 +39,7 @@ const DashboardWrapper: FC = () => {
     useEffect(() => {
         const doStuff = async() => {
 
-            await delay(1000);
+            await delay(30000);
 
             setAlerts(alerts => [...alerts, {
                     atTime: "03:33",
