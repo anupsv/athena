@@ -40,16 +40,6 @@ export * from './statistics/StatisticsWidget4'
 export * from './statistics/StatisticsWidget5'
 export * from './statistics/StatisticsWidget6'
 
-// charts
-export * from './charts/ChartsWidget1'
-export * from './charts/ChartsWidget2'
-export * from './charts/ChartsWidget3'
-export * from './charts/ChartsWidget4'
-export * from './charts/ChartsWidget5'
-export * from './charts/ChartsWidget6'
-export * from './charts/ChartsWidget7'
-export * from './charts/ChartsWidget8'
-
 // tables
 export * from './tables/TablesWidget1'
 export * from './tables/TablesWidget2'
@@ -64,11 +54,6 @@ export * from './tables/TablesWidget10'
 export * from './tables/TablesWidget11'
 export * from './tables/TablesWidget12'
 export * from './tables/TablesWidget13'
-
-// engage
-export * from './engage/EngageWidget1'
-export * from './engage/EngageWidget2'
-export * from './engage/EngageWidget3'
 
 // feeds
 export * from './feeds/FeedsWidget2'

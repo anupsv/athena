@@ -1,6 +1,5 @@
 import {Navigate, Route, Routes, Outlet} from 'react-router-dom'
 import {PageLink, PageTitle} from '../../../supporting/layout/core'
-import {Charts} from './components/Charts'
 import {Feeds} from './components/Feeds'
 import {Lists} from './components/Lists'
 import {Tables} from './components/Tables'
@@ -31,7 +30,6 @@ const WidgetsPage = () => {
           element={
             <>
               <PageTitle breadcrumbs={widgetsBreadCrumbs}>Charts</PageTitle>
-              <Charts />
             </>
           }
         />
