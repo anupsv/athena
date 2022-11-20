@@ -12,7 +12,6 @@ const DashboardPage: FC = () => (
     <div className='row g-5 gx-xxl-12'>
       <div className='col-xxl-11'>
         <ListsWidget5 className='card-xxl-stretch mb-5 mb-xxl-8' />
-        {/*<TablesWidget5 className='card-xxl-stretch mb-5 mb-xxl-8' />*/}
       </div>
     </div>
   </>
@@ -22,7 +21,7 @@ const DashboardWrapper: FC = () => {
   const intl = useIntl()
   return (
     <>
-      <PageTitle breadcrumbs={[]}>{intl.formatMessage({id: 'MENU.DASHBOARD'})}</PageTitle>
+      <PageTitle breadcrumbs={[]}>{"Transactions"}</PageTitle>
       <DashboardPage />
     </>
   )

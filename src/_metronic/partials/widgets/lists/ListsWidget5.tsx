@@ -16,20 +16,6 @@ const ListsWidget5: React.FC<Props> = ({className}) => {
           <span className='fw-bold mb-2 text-dark'>Activities</span>
           <span className='text-muted fw-semibold fs-7'>890,344 Sales</span>
         </h3>
-        <div className='card-toolbar'>
-          {/* begin::Menu */}
-          <button
-            type='button'
-            className='btn btn-sm btn-icon btn-color-primary btn-active-light-primary'
-            data-kt-menu-trigger='click'
-            data-kt-menu-placement='bottom-end'
-            data-kt-menu-flip='top-end'
-          >
-            <KTSVG path='/media/icons/duotune/general/gen024.svg' className='svg-icon-2' />
-          </button>
-          <Dropdown1 />
-          {/* end::Menu */}
-        </div>
       </div>
       {/* end::Header */}
       {/* begin::Body */}
@@ -65,7 +51,7 @@ const ListsWidget5: React.FC<Props> = ({className}) => {
             {/* end::Badge */}
             {/* begin::Content */}
             <div className='timeline-content d-flex'>
-              <span className='fw-bold text-gray-800 ps-3'>AEOL meeting</span>
+              <span className='fw-bold text-gray-800 ps-3'>MOFO meeting</span>
             </div>
             {/* end::Content */}
           </div>
