@@ -5,6 +5,8 @@ pragma solidity ^0.8.9;
 import { AddressAliasHelper } from "../../standards/AddressAliasHelper.sol";
 import { Lib_OVMCodec } from "../../libraries/codec/Lib_OVMCodec.sol";
 import { Lib_AddressResolver } from "../../libraries/resolver/Lib_AddressResolver.sol";
+import { Lib_MerkleTree } from "../../libraries/utils/Lib_MerkleTree.sol";
+import { MarketAPI } from "../../libraries/marketplace/MarketApi.sol";
 
 /* Interface Imports */
 import { ICanonicalTransactionChain } from "./ICanonicalTransactionChain.sol";
@@ -295,21 +297,25 @@ contract CanonicalTransactionChain is ICanonicalTransactionChain, Lib_AddressRes
             numContexts := shr(232, calldataload(12))
         }
 
-        require(
-            shouldStartAtElement == getTotalElements(),
-            "Actual batch start index does not match expected start index."
-        );
+        bytes memory stub = "";
+        MarketAPI marketAPI = MarketAPI(resolve("MarketAPI"));
+        marketAPI.publish_storage_deals(stub, address(this));
 
-        require(
-            msg.sender == resolve("OVM_Sequencer"),
-            "Function can only be called by the Sequencer."
-        );
+        // require(
+        //     shouldStartAtElement == getTotalElements(),
+        //     "Actual batch start index does not match expected start index."
+        // );
+
+        // require(
+        //     msg.sender == resolve("OVM_Sequencer"),
+        //     "Function can only be called by the Sequencer."
+        // );
 
         uint40 nextTransactionPtr = uint40(
             BATCH_CONTEXT_START_POS + BATCH_CONTEXT_SIZE * numContexts
         );
 
-        require(msg.data.length >= nextTransactionPtr, "Not enough BatchContexts provided.");
+        // require(msg.data.length >= nextTransactionPtr, "Not enough BatchContexts provided.");
 
         // Counter for number of sequencer transactions appended so far.
         uint32 numSequencerTransactions = 0;
@@ -333,10 +339,10 @@ contract CanonicalTransactionChain is ICanonicalTransactionChain, Lib_AddressRes
             nextQueueIndex += uint40(curContext.numSubsequentQueueTransactions);
         }
 
-        require(
-            nextQueueIndex <= queueElements.length,
-            "Attempted to append more elements than are available in the queue."
-        );
+        // require(
+        //     nextQueueIndex <= queueElements.length,
+        //     "Attempted to append more elements than are available in the queue."
+        // );
 
         // Generate the required metadata that we need to append this batch
         uint40 numQueuedTransactions = totalElementsToAppend - numSequencerTransactions;
@@ -522,6 +528,7 @@ contract CanonicalTransactionChain is ICanonicalTransactionChain, Lib_AddressRes
             header.prevTotalElements,
             header.extraData
         );
+
 
         bytes32 batchHeaderHash = Lib_OVMCodec.hashBatchHeader(header);
         bytes27 latestBatchContext = _makeBatchExtraData(
